@@ -1,0 +1,81 @@
+<!-- Button to Open the Modal -->
+<app-header></app-header>
+
+    <button type="button" class="btn btn-primary" (click)="OpenModal()" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+
+
+
+
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" (click)="CloseModal()" class="btn-close"  data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+
+ <form>
+        <div class="row">
+          <div class="col-md-12">
+             <h3><b>
+               {{carak_data.productName}}
+             </b></h3>
+          </div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-12">
+           <h3><b>
+             {{carak_data.quantity}}
+           </b></h3>
+        </div>
+     </div>
+
+     <!-- <div class="row">
+      <div class="col-md-12">
+         <h3><b>
+           {{carak_data.Price}}
+         </b></h3>
+      </div>
+   </div> -->
+
+   <div class="row">
+    <div class="col-md-12">
+       <h3><b>
+         {{carak_data.phoneNum}}
+       </b></h3>
+    </div>
+  </div>
+
+    <div class="row">
+        <div class="col-md-3">
+           Start :
+        </div>
+        <div class="col-md-9">
+            {{carak_data.date }}
+        </div>
+     </div>
+
+    </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button"(click)="CloseModal()" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+

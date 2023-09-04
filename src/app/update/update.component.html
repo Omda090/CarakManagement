@@ -1,0 +1,38 @@
+<div class="card p-5">
+  <h3>Update Product</h3>
+  <form #UpdateEmployee="ngForm" class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">productName</label>
+      <input type="text" name="productName" #fullName="ngModel" [(ngModel)]="carakData.productName" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">quantity</label>
+      <input type="text" name="quantity" #branch="ngModel" [(ngModel)]="carakData.quantity"  class="form-control" id="inputPassword4">
+    </div>
+    <!-- <div class="col-12">
+      <label for="inputAddress" class="form-label">Price</label>
+      <input type="text" name="Price" #jobTitle="ngModel" [(ngModel)]="carakData.Price"  class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div> -->
+    <!-- <div class="col-12">
+      <label for="inputAddress2" class="form-label">salary</label>
+      <input type="number" name="salary" #salary="ngModel" [(ngModel)]="employeeData.salary"  class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div> -->
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">phoneNum</label>
+      <input type="Phone" name="phoneNum" #phone="ngModel" [(ngModel)]="carakData.phoneNum"  class="form-control" id="inputCity">
+    </div>
+
+
+    <div class="col-md-6">
+      <!-- <label for="id" class="form-label" hidden>ProductName</label> -->
+      <input hidden type="text" name="id" #id="ngModel" [(ngModel)]="carakData.id" class="form-control" id="id">
+    </div>
+
+    <div class="col-12">
+      <button (click)="onUpdate(UpdateEmployee)" [routerLink]="['/displaydata']"
+       class="btn btn-outline-info">Update</button>
+      <button class="btn btn-outline-info mx-2" [routerLink]="['/displaydata/']">backTolist </button>
+    </div>
+  </form>
+</div>
+

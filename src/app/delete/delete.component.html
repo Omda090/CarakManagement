@@ -1,0 +1,35 @@
+<div class="card p-5">
+  <h3>Delete Product</h3>
+  <form #UpdateCarak="ngForm" class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">name</label>
+      <input type="text" name="fullName" #name="ngModel" [(ngModel)]="carakData.productName" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Quantity</label>
+      <input type="text" name="Quantity" #Email="ngModel" [(ngModel)]="carakData.quantity"  class="form-control" id="inputPassword4">
+    </div>
+    <!-- <div class="col-12">
+      <label for="inputAddress" class="form-label">attendStatus</label>
+      <input type="text" name="attendStatus" #attendStatus="ngModel" [(ngModel)]="carakData.Price" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div> -->
+
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Order</label>
+      <input type="Phone" name="Order" #Order="ngModel" [(ngModel)]="carakData.phoneNum" class="form-control" id="inputCity">
+    </div>
+
+
+    <div class="col-md-6">
+      <label for="id" class="form-label" hidden>id</label>
+      <input hidden type="text" name="id" #id="ngModel" [(ngModel)]="carakData.id" class="form-control" id="id">
+    </div>
+
+    <div class="col-12">
+      <button (click)="onDelete(UpdateCarak)" [routerLink]="['/displaydata']" class="btn btn-danger">Delete</button>
+      <button class="btn btn-outline-info mx-2" [routerLink]="['/displaydata']">backTolist </button>
+    </div>
+  </form>
+</div>
+
+

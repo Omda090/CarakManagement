@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+
+<div class="container p-4">
+  <form class="row mx-5 g-3" #new_form="ngForm">
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">ProductName </label>
+    <input type="text" name="ProductName" #title="ngModel" [(ngModel)]="carak_data.ProductName" class="form-control" >
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Supplier </label>
+    <input type="text" name="Supplier" #title="ngModel" [(ngModel)]="carak_data.Supplier" class="form-control" >
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Phone </label>
+    <input type="text" name="Phone" #title="ngModel" [(ngModel)]="carak_data.Phone" class="form-control" >
+  </div>
+
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" (click)="onSave(new_form)">Add </button>
+  </div>
+</form>
+
+</div>

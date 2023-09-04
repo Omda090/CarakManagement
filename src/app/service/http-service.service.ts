@@ -34,7 +34,7 @@ export class HttpServiceService {
 
   update_carak(data: any , id: number) {
     return this.http.put(
-      this.baseUrl + "updateCarak?id=" + id , data , {responseType : 'blob'}
+      this.baseUrl + "carak/updateCarak?id=" + id , data , {responseType : 'blob'}
     );
   }
 

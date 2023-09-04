@@ -39,7 +39,7 @@ export class UpdateComponent implements OnInit{
 
 
   onUpdate(UpdateEmployee:NgForm) {
-    return this.service.updateCarak(UpdateEmployee.value,UpdateEmployee.value.id).subscribe(response => {
+    return this.service.update_carak(UpdateEmployee.value,UpdateEmployee.value.id).subscribe(response => {
    alert("Updated Succefully")
 
       },
